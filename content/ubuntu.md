@@ -30,3 +30,5 @@ shadowsocks
 sudo apt install --no-install-recommends \
 pelican python-bs4 ghp-import
 ```
+
+- `ghp-import`的参数`-c CNAME`可自动生成`CNAME`文件
