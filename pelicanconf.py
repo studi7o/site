@@ -17,7 +17,8 @@ THEME = 'pelican-themes/elegant'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['extract_toc']
 MARKDOWN = {
-	'extensions' : ['toc', 'fenced_code', 'codehilite(css_class=highlight)']
+	'extensions' : ['toc', 'fenced_code', 'codehilite(css_class=highlight)', 'tables'],
+	'output_format': 'html5'
 }
 
 STATIC_PATHS = ['favicon.ico']

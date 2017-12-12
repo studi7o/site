@@ -32,3 +32,10 @@ pelican python-bs4 ghp-import
 ```
 
 - `ghp-import`的参数`-c CNAME`可自动生成`CNAME`文件
+
+* * *
+
+### 配置wget
+
+- `--tries=1`：修改重试次数为1，默认是20次
+- `-e http_proxy=http://ip:port -e https_proxy=http://ip:port -e ftp_proxy=http://ip:port`：设置代理
