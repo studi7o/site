@@ -52,4 +52,10 @@ pelican python-bs4 ghp-import
 &lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;ghp-import&lt;/code&gt;的参数&lt;code&gt;-c CNAME&lt;/code&gt;可自动生成&lt;code&gt;CNAME&lt;/code&gt;文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;h3 id="wget"&gt;配置wget&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--tries=1&lt;/code&gt;：修改重试次数为1，默认是20次&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-e http_proxy=http://ip:port -e https_proxy=http://ip:port -e ftp_proxy=http://ip:port&lt;/code&gt;：设置代理&lt;/li&gt;
 &lt;/ul&gt;</content></entry></feed>
