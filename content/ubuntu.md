@@ -30,6 +30,7 @@ gnome-documents \
 gnome-games-app \
 gnome-maps \
 gnome-music \
+gnome-photos \
 gnome-todo \
 gnome-weather \
 polari \
@@ -117,7 +118,6 @@ cmake cmake-doc pkg-config \
 llvm clang clang-format llvm-4.0-doc clang-4.0-doc \
 golang \
 openjdk-8-jdk openjdk-8-doc openjdk-8-source openjdk-8-demo \
-lib64ncurses5-dev ncurses-doc \
 libappindicator-dev libappindicator-doc \
 libatk1.0-dev libatk1.0-doc \
 libatkmm-1.6-dev libatkmm-1.6-doc \
@@ -136,7 +136,9 @@ libglib2.0-dev libglib2.0-doc \
 libgstreamermm-1.0-dev libgstreamermm-1.0-doc \
 libice-dev libice-doc \
 libjson-glib-dev libjson-glib-doc \
+libltdl-dev libtool-doc \
 liblzma-dev liblzma-doc \
+libncurses5-dev ncurses-doc \
 libnotify-dev libnotify-doc \
 libpango1.0-dev libpango1.0-doc \
 libsdl-mixer1.2-dev \
@@ -153,6 +155,7 @@ libvdpau-dev libvdpau-doc \
 libx11-dev libx11-doc \
 libxml++2.6-dev libxml++2.6-doc \
 libxml2-dev libxml2-doc \
+llvm-dev \
 python-dev python-doc \
 python3-dev python3-doc \
 ```
@@ -190,6 +193,27 @@ shadowsocks M2Crypto
 
 * * *
 
+### polipo设置
+
+> 默认端口 8123
+
+修改文件 `/etc/polipo/config`，增加以下配置
+
+``` txt
+proxyAddress = "0.0.0.0"
+allowedClients = 127.0.0.1, 192.168.0.0/16
+socksParentProxy = "localhost:1080"
+socksProxyType = socks5
+```
+
+* * *
+
+### proxychains设置
+
+修改文件 `/etc/proxychains.conf`，删除原来的 `socks4` 配置，增加新的配置 `socks5 IP PORT`
+
+* * *
+
 ### 安装Pelican
 
 > 静态博客
@@ -216,6 +240,19 @@ pelican Markdown beautifulsoup4 typogrify ghp-import
 - 壁纸安装目录 `/usr/share/backgrounds` 及 `~/.local/share/backgrounds/`
 - 字体安装目录 `/usr/share/fonts` 及 `~/.local/share/fonts/`
 
+下载
+
+``` sh
+# Vimix-Gtk-Theme
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1513512805/s/3d9d7459c7395278cd8974ab62347951/t/1513669455/Vimix-Dark-Theme.tar.xz
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1513512788/s/3d9d7459c7395278cd8974ab62347951/t/1513669455/Vimix-Light-Theme.tar.xz
+# Vimix-Icon-Theme
+wget https://github.com/vinceliuice/vimix-icon-theme/archive/2017.09.24.tar.gz
+# Wallpapers
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1506049886/s/f81518fae8c0fbc9ababee59e1893113/t/1513672104/lakeu.zip
+```
+
+设置
 ``` sh
 gsettings get org.gnome.desktop.interface gtk-theme
 gsettings set org.gnome.desktop.interface gtk-theme 'THEME'
@@ -412,3 +449,23 @@ function FindProxyForURL(url, host)
 }
 ```
 
+* * *
+
+### 应用图标
+
+> 图标路径 `~/.local/share/applications/`
+
+#### Android Studio (android-studio.desktop)
+
+``` txt
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Android Studio
+Icon=android-studio
+Exec=/opt/android-studio/bin/studio.sh %f
+Comment=IDE for Android Development
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-android-studio
+```
