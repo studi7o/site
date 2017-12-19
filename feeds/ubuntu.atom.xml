@@ -1,18 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Notes - Ubuntu</title><link href="http://blog.kinton.cloud/" rel="alternate"></link><link href="http://blog.kinton.cloud/feeds/ubuntu.atom.xml" rel="self"></link><id>http://blog.kinton.cloud/</id><updated>2000-01-01T00:00:00+08:00</updated><entry><title>Ubuntu</title><link href="http://blog.kinton.cloud/ubuntu.html" rel="alternate"></link><published>2000-01-01T00:00:00+08:00</published><updated>2000-01-01T00:00:00+08:00</updated><author><name>Yaty Lee</name></author><id>tag:blog.kinton.cloud,2000-01-01:/ubuntu.html</id><summary type="html">
+&lt;h3 id="_1"&gt;显卡驱动&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends \
+nvidia-384 nvidia-prime
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;如果安装的是Ubuntu Gnome 16.04，需要额外安装 &lt;code&gt;gdm&lt;/code&gt;&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3 id="gnome"&gt;Gnome软件&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
+ibus-libpinyin &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-boxes &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-builder &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-calculator &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-calendar &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-contacts &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-dictionary &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-documents &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-games-app &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-maps &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-music &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-todo &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-weather &lt;span class="se"&gt;\&lt;/span&gt;
+polari &lt;span class="se"&gt;\&lt;/span&gt;
+totem &lt;span class="se"&gt;\&lt;/span&gt;
+corebird &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-recipes &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch-player-backend-gstreamer-cairo &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch-player-backend-gstreamer-clutter &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch-player-backend-gstreamer-opengl &lt;span class="se"&gt;\&lt;/span&gt;
+pitivi &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-1.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-gst-3.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-gst-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-gtk-1.0-dev …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
+&lt;h3 id="_1"&gt;显卡驱动&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends \
+nvidia-384 nvidia-prime
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;如果安装的是Ubuntu Gnome 16.04，需要额外安装 &lt;code&gt;gdm&lt;/code&gt;&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3 id="gnome"&gt;Gnome软件&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
+ibus-libpinyin &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-boxes &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-builder &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-calculator &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-calendar &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-contacts &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-dictionary &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-documents &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-games-app &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-maps &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-music &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-todo &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-weather &lt;span class="se"&gt;\&lt;/span&gt;
+polari &lt;span class="se"&gt;\&lt;/span&gt;
+totem &lt;span class="se"&gt;\&lt;/span&gt;
+corebird &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-recipes &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch-player-backend-gstreamer-cairo &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch-player-backend-gstreamer-clutter &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-twitch-player-backend-gstreamer-opengl &lt;span class="se"&gt;\&lt;/span&gt;
+pitivi &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-1.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-gst-3.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-gst-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-gtk-1.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
+libclutter-gtk-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgail-dev libgail-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgail-3-dev libgail-3-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgtk-3-dev libgtk-3-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgtk2.0-dev libgtk2.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgtkdatabox-dev libgtkdatabox-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgtkdataboxmm-dev libgtkdataboxmm-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgtkmm-2.4-dev libgtkmm-2.4-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgtkmm-3.0-dev libgtkmm-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgtksourceview-3.0-dev libgtksourceview-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libwebkit2gtk-4.0-dev libwebkit2gtk-4.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="kde"&gt;KDE软件&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
+fcitx-googlepinyin &lt;span class="se"&gt;\&lt;/span&gt;
+kdenlive &lt;span class="se"&gt;\&lt;/span&gt;
+kdevelop kdevelop-l10n kdevelop-python kdevelop-python-l10n &lt;span class="se"&gt;\&lt;/span&gt;
+krita krita-l10n &lt;span class="se"&gt;\&lt;/span&gt;
+kwrite kate &lt;span class="se"&gt;\&lt;/span&gt;
+librecad &lt;span class="se"&gt;\&lt;/span&gt;
+qtcreator &lt;span class="se"&gt;\&lt;/span&gt;
+virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack &lt;span class="se"&gt;\&lt;/span&gt;
+telegram-desktop &lt;span class="se"&gt;\&lt;/span&gt;
+kdevelop-dev &lt;span class="se"&gt;\&lt;/span&gt;
+kdevplatform-dev kdevplatform-l10n &lt;span class="se"&gt;\&lt;/span&gt;
+libqt5serialport5-dev &lt;span class="se"&gt;\&lt;/span&gt;
+qt3d5-dev qt3d5-doc qt3d5-doc-html qt3d5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+qtbase5-dev qtbase5-doc qtbase5-doc-html qtbase5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+qtconnectivity5-dev qtconnectivity5-doc qtconnectivity5-doc-html qtconnectivity5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+qtdeclarative5-dev qtdeclarative5-doc qtdeclarative5-doc-html qtdeclarative5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+qtlocation5-dev qtlocation5-doc qtlocation5-doc-html qtlocation5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+qtmultimedia5-dev qtmultimedia5-doc qtmultimedia5-doc-html qtmultimedia5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+qtscript5-dev qtscript5-doc qtscript5-doc-html qtscript5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+qttools5-dev qttools5-doc qttools5-doc-html qttools5-examples &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="_2"&gt;其他软件&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
+ffmpeg ffmpeg-doc &lt;span class="se"&gt;\&lt;/span&gt;
+gstreamer1.0-plugins-bad gstreamer1.0-plugins-bad-doc &lt;span class="se"&gt;\&lt;/span&gt;
+gstreamer1.0-plugins-ugly gstreamer1.0-plugins-ugly-doc &lt;span class="se"&gt;\&lt;/span&gt;
+gstreamer1.0-fluendo-mp3 gstreamer1.0-libav &lt;span class="se"&gt;\&lt;/span&gt;
+vim vim-doc vim-scripts vim-addon-manager exuberant-ctags &lt;span class="se"&gt;\&lt;/span&gt;
+git git-doc repo mercurial subversion &lt;span class="se"&gt;\&lt;/span&gt;
+p7zip-full p7zip-rar zip unzip rar unrar unrar-free unar &lt;span class="se"&gt;\&lt;/span&gt;
+adb fastboot &lt;span class="se"&gt;\&lt;/span&gt;
+minicom picocom openocd &lt;span class="se"&gt;\&lt;/span&gt;
+mtd-utils u-boot-tools &lt;span class="se"&gt;\&lt;/span&gt;
+polipo proxychains squid stunnel4 &lt;span class="se"&gt;\&lt;/span&gt;
+pandoc &lt;span class="se"&gt;\&lt;/span&gt;
+fping hping3 netcat nmap &lt;span class="se"&gt;\&lt;/span&gt;
+samba smbclient samba-dsdb-modules samba-vfs-modules &lt;span class="se"&gt;\&lt;/span&gt;
+vsftpd sqlite3 sqlite3-doc &lt;span class="se"&gt;\&lt;/span&gt;
+qemu qemu-user-static &lt;span class="se"&gt;\&lt;/span&gt;
+build-essential cppcheck glibc-doc gcc-doc libstdc++-7-doc make-doc &lt;span class="se"&gt;\&lt;/span&gt;
+gcc-multilib g++-multilib gcc-arm-none-eabi gdb-arm-none-eabi &lt;span class="se"&gt;\&lt;/span&gt;
+gdb gdb-doc &lt;span class="se"&gt;\&lt;/span&gt;
+autoconf autoconf-doc automake libtool libtool-doc &lt;span class="se"&gt;\&lt;/span&gt;
+cmake cmake-doc pkg-config &lt;span class="se"&gt;\&lt;/span&gt;
+llvm clang clang-format llvm-4.0-doc clang-4.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+golang &lt;span class="se"&gt;\&lt;/span&gt;
+openjdk-8-jdk openjdk-8-doc openjdk-8-source openjdk-8-demo &lt;span class="se"&gt;\&lt;/span&gt;
+lib64ncurses5-dev ncurses-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libappindicator-dev libappindicator-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libatk1.0-dev libatk1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libatkmm-1.6-dev libatkmm-1.6-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libbz2-dev bzip2-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libcairo2-dev libcairo2-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libcairomm-1.0-dev libcairomm-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libcanberra-dev libcanberra-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libcogl-dev libcogl-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libdee-dev libdee-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libdevil-dev &lt;span class="se"&gt;\&lt;/span&gt;
+libflac-dev libflac-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgda-5.0-dev libgda-5.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgdamm5.0-dev libgdamm5.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgdk-pixbuf2.0-dev libgdk-pixbuf2.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libglib2.0-dev libglib2.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgstreamermm-1.0-dev libgstreamermm-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libice-dev libice-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libjson-glib-dev libjson-glib-doc &lt;span class="se"&gt;\&lt;/span&gt;
+liblzma-dev liblzma-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libnotify-dev libnotify-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libpango1.0-dev libpango1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libsdl-mixer1.2-dev &lt;span class="se"&gt;\&lt;/span&gt;
+libsdl2-dev libsdl2-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libsigc++-2.0-dev libsigc++-2.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libsm-dev libsm-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libsoup2.4-dev libsoup2.4-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libssl-dev libssl-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libtelepathy-farstream-dev libtelepathy-farstream-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libtelepathy-glib-dev libtelepathy-glib-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libtelepathy-logger-dev libtelepathy-logger-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libtheora-dev libtheora-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libvdpau-dev libvdpau-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libx11-dev libx11-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libxml++2.6-dev libxml++2.6-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libxml2-dev libxml2-doc &lt;span class="se"&gt;\&lt;/span&gt;
+python-dev python-doc &lt;span class="se"&gt;\&lt;/span&gt;
+python3-dev python3-doc &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="32bit"&gt;32bit库&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Android Studio&lt;/span&gt;
+sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
+lib32ncurses5 lib32stdc++6 lib32z1
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
 &lt;h3 id="shadowsocks"&gt;安装Shadowsocks&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;翻墙&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 shadowsocks
+&lt;span class="c1"&gt;# or&lt;/span&gt;
+pip install --user &lt;span class="se"&gt;\&lt;/span&gt;
+shadowsocks M2Crypto
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id="_1"&gt;客户端&lt;/h4&gt;
+&lt;h4 id="_3"&gt;客户端&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;修改服务文件&lt;code&gt;/etc/init.d/shadowsocks&lt;/code&gt;，将变量&lt;code&gt;DAEMON&lt;/code&gt;更改为&lt;code&gt;/usr/bin/sslocal&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id="_2"&gt;服务端&lt;/h4&gt;
+&lt;h4 id="_4"&gt;服务端&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;，将字段&lt;code&gt;server&lt;/code&gt;修改为&lt;code&gt;0.0.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -22,40 +204,179 @@ shadowsocks
 &lt;p&gt;静态博客&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
-pelican python-bs4 ghp-import
-&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ghp-import&lt;/code&gt;的参数&lt;code&gt;-c CNAME …&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
-&lt;h3 id="shadowsocks"&gt;安装Shadowsocks&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;翻墙&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
-shadowsocks
-&lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id="_1"&gt;客户端&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;修改服务文件&lt;code&gt;/etc/init.d/shadowsocks&lt;/code&gt;，将变量&lt;code&gt;DAEMON&lt;/code&gt;更改为&lt;code&gt;/usr/bin/sslocal&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id="_2"&gt;服务端&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;，将字段&lt;code&gt;server&lt;/code&gt;修改为&lt;code&gt;0.0.0.0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr/&gt;
-&lt;h3 id="pelican"&gt;安装Pelican&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;静态博客&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
-pelican python-bs4 ghp-import
+pelican python-bs4 python-typogrify ghp-import
+&lt;span class="c1"&gt;# or&lt;/span&gt;
+pip install --user &lt;span class="se"&gt;\&lt;/span&gt;
+pelican Markdown beautifulsoup4 typogrify ghp-import
 &lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;ghp-import&lt;/code&gt;的参数&lt;code&gt;-c CNAME&lt;/code&gt;可自动生成&lt;code&gt;CNAME&lt;/code&gt;文件&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr/&gt;
-&lt;h3 id="wget"&gt;配置wget&lt;/h3&gt;
+&lt;h3 id="_5"&gt;系统配置&lt;/h3&gt;
+&lt;h4 id="_6"&gt;主题和字体&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;--tries=1&lt;/code&gt;：修改重试次数为1，默认是20次&lt;/li&gt;
+&lt;li&gt;主题安装目录 &lt;code&gt;/usr/share/themes&lt;/code&gt; 及 &lt;code&gt;~/.local/share/themes/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;图标安装目录 &lt;code&gt;/usr/share/icons&lt;/code&gt; 及 &lt;code&gt;~/.local/share/icons/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;壁纸安装目录 &lt;code&gt;/usr/share/backgrounds&lt;/code&gt; 及 &lt;code&gt;~/.local/share/backgrounds/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;字体安装目录 &lt;code&gt;/usr/share/fonts&lt;/code&gt; 及 &lt;code&gt;~/.local/share/fonts/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings get org.gnome.desktop.interface gtk-theme
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface gtk-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.wm.preferences theme
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferences theme  &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.interface icon-theme
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface icon-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.interface cursor-theme
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface cursor-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.background picture-uri
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.background picture-uri &lt;span class="s1"&gt;'file://PATH'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.interface font-name
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface font-name &lt;span class="s1"&gt;'FONT'&lt;/span&gt; &lt;span class="c1"&gt;# 'Ubuntu 11'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.interface document-font-name
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface document-font-name &lt;span class="s1"&gt;'FONT'&lt;/span&gt; &lt;span class="c1"&gt;# 'Sans 11'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.interface monospace-font-name
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface monospace-font-name &lt;span class="s1"&gt;'FONT'&lt;/span&gt; &lt;span class="c1"&gt;# 'Ubuntu Mono 13'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.wm.preferences titlebar-uses-system-font
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferences titlebar-uses-system-font &lt;span class="nb"&gt;false&lt;/span&gt;
+
+gsettings get org.gnome.desktop.wm.preferences titlebar-font
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferences titlebar-font &lt;span class="s1"&gt;'FONT'&lt;/span&gt; &lt;span class="c1"&gt;# 'Ubuntu Bold 11'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="_7"&gt;登录界面背景&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/"&gt;Change Login Screen Background&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="_8"&gt;输入法&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings get org.gnome.desktop.input-sources sources
+&lt;span class="c1"&gt;# [('ibus', 'libpinyin')]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="_9"&gt;代理&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings list-recursively org.gnome.system.proxy
+
+gsettings get org.gnome.system.proxy use-same-proxy
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.system.proxy use-same-proxy &lt;span class="nb"&gt;true&lt;/span&gt;
+
+gsettings get org.gnome.system.proxy autoconfig-url
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.system.proxy autoconfig-url &lt;span class="s1"&gt;'PATH'&lt;/span&gt;
+
+gsettings get org.gnome.system.proxy.socks host
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.system.proxy.socks host &lt;span class="s1"&gt;'IP'&lt;/span&gt;
+
+gsettings get org.gnome.system.proxy.socks port
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.system.proxy.socks port PORT
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="_10"&gt;其他&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings get org.gnome.desktop.default-applications.terminal &lt;span class="nb"&gt;exec&lt;/span&gt;
+gsettings get org.gnome.desktop.default-applications.terminal exec-arg
+
+gsettings get org.gnome.desktop.background picture-options
+gsettings get org.gnome.desktop.background color-shading-type
+gsettings get org.gnome.desktop.background primary-color
+gsettings get org.gnome.desktop.background secondary-color
+gsettings get org.gnome.desktop.background show-desktop-icons
+
+gsettings get org.gnome.desktop.interface buttons-have-icons
+gsettings get org.gnome.desktop.interface menus-have-icons
+gsettings get org.gnome.desktop.interface clock-show-date
+gsettings get org.gnome.desktop.interface clock-show-seconds
+gsettings get org.gnome.desktop.interface menubar-accel
+
+gsettings get org.gnome.desktop.screensaver lock-enabled
+
+gsettings get org.gnome.desktop.session idle-delay
+
+gsettings get org.gnome.desktop.wm.keybindings panel-main-menu
+gsettings get org.gnome.desktop.wm.keybindings close
+gsettings get org.gnome.desktop.wm.keybindings panel-run-dialog
+gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-1
+gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-2
+gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-3
+gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-4
+gsettings get org.gnome.desktop.wm.keybindings show-desktop
+
+gsettings get org.gnome.desktop.wm.preferences num-workspaces
+gsettings get org.gnome.desktop.wm.preferences visual-bell
+gsettings get org.gnome.desktop.wm.preferences visual-bell-type
+
+gsettings get org.gnome.nautilus.desktop home-icon-visible
+gsettings get org.gnome.nautilus.desktop network-icon-visible
+gsettings get org.gnome.nautilus.desktop trash-icon-visible
+gsettings get org.gnome.nautilus.preferences always-use-location-entry
+gsettings get org.gnome.nautilus.preferences default-folder-viewer
+gsettings get org.gnome.nautilus.preferences show-image-thumbnails
+gsettings get org.gnome.nautilus.preferences show-directory-item-counts
+
+gsettings get org.gnome.settings-daemon.plugins.power button-power
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="git"&gt;git设置&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global user.name &lt;span class="s2"&gt;"Yaty Lee"&lt;/span&gt;
+git config --global user.email &lt;span class="s2"&gt;"studi7o@mail.ru"&lt;/span&gt;
+git config --global core.editor &lt;span class="s2"&gt;"vim"&lt;/span&gt;
+git config --global color.ui auto
+git config --global http.sslVerify &lt;span class="nb"&gt;false&lt;/span&gt;
+git config --global http.postBuffer &lt;span class="m"&gt;524288000&lt;/span&gt;
+git config --global http.proxy &lt;span class="s2"&gt;"socks5://IP:PORT"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="android"&gt;Android开发设置&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo wget https://github.com/M0Rf30/android-udev-rules/raw/master/51-android.rules &lt;span class="se"&gt;\&lt;/span&gt;
+-P /etc/udev/rules.d
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="python"&gt;python设置&lt;/h3&gt;
+&lt;p&gt;更换国内源&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.config/pip/ &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.pip/
+
+cat &lt;span class="s"&gt;&amp;lt;&amp;lt; 'EOF' | tee $HOME/.config/pip/pip.conf $HOME/.pip/pip.conf &amp;gt; /dev/null&lt;/span&gt;
+&lt;span class="s"&gt;[global]&lt;/span&gt;
+&lt;span class="s"&gt;index-url = https://pypi.doubanio.com/simple&lt;/span&gt;
+&lt;span class="s"&gt;EOF&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;安装pip&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install python-pip
+&lt;span class="c1"&gt;# or&lt;/span&gt;
+easy_install --user pip
+&lt;span class="c1"&gt;# or&lt;/span&gt;
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py --user
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="wget"&gt;wget参数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--tries=1&lt;/code&gt;：修改下载次数为1，默认是20次&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;-e http_proxy=http://ip:port -e https_proxy=http://ip:port -e ftp_proxy=http://ip:port&lt;/code&gt;：设置代理&lt;/li&gt;
-&lt;/ul&gt;</content></entry></feed>
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;h3 id="box"&gt;Box客户端&lt;/h3&gt;
+&lt;p&gt;在 Nautilus 中连接 &lt;code&gt;davs://dav.box.com/&lt;/code&gt;&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3 id="_11"&gt;编写代理文件&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;PROXY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"SOCKS5 127.0.0.1:1080; DIRECT"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;blocked&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s2"&gt;"www.google.com"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;slowly&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s2"&gt;"downloads.gradle.org"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;FindProxyForURL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;host&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;Object&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;hasOwnProperty&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;blocked&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;host&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;PROXY&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;Object&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;hasOwnProperty&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;slowly&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;host&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;PROXY&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"DIRECT"&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry></feed>
