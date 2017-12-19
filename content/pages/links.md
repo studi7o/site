@@ -170,4 +170,5 @@ Date: 2000-01-01 00:00
 * [ubuntu shadowsocks polipo 全局代理 | dearmadman-王奇的博客](http://dearmadman.com/2015/08/30/use-shadowsocks-in-ubuntu/)
 * [Polyline/BezierDrawMethod.java at master · 82367825/Polyline](https://github.com/82367825/Polyline/blob/master/app/src/main/java/com/zero/polyline/BezierDrawMethod.java)
 * [OptimusPrimeRen/Android-O-Adaptive: Android O shortcut manage demo](https://github.com/OptimusPrimeRen/Android-O-Adaptive)
+* [Beyond Compare](https://www.scootersoftware.com/)
 
