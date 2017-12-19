@@ -14,12 +14,12 @@
 
 <meta property="og:title" content="Ubuntu "/>
 <meta property="og:url" content="http://blog.kinton.cloud/ubuntu.html" />
-<meta property="og:description" content="显卡驱动 sudo apt install --no-install-recommends \ nvidia-384 nvidia-prime 如果安装的是Ubuntu Gnome 16.04，需要额外安装 gdm Gnome软件 sudo apt install --no-install-recommends \ ibus-libpinyin \ gnome-boxes \ gnome-builder \ gnome-calculator \ gnome-calendar \ gnome-contacts \ gnome-dictionary \ gnome-documents \ gnome-games-app \ gnome-maps \ gnome-music \ gnome-todo \ gnome-weather \ polari \ totem \ corebird \ gnome-recipes \ gnome-twitch \ gnome-twitch-player-backend-gstreamer-cairo \ gnome-twitch-player-backend-gstreamer-clutter \ gnome-twitch-player-backend-gstreamer-opengl \ pitivi \ libclutter-1.0-dev \ libclutter-1.0-doc \ libclutter-gst-3.0-dev \ libclutter-gst-3.0-doc \ libclutter-gtk-1.0-dev …" />
+<meta property="og:description" content="显卡驱动 sudo apt install --no-install-recommends \ nvidia-384 nvidia-prime 如果安装的是Ubuntu Gnome 16.04，需要额外安装 gdm Gnome软件 sudo apt install --no-install-recommends \ ibus-libpinyin \ gnome-boxes \ gnome-builder \ gnome-calculator \ gnome-calendar \ gnome-contacts \ gnome-dictionary \ gnome-documents \ gnome-games-app \ gnome-maps \ gnome-music \ gnome-photos \ gnome-todo \ gnome-weather \ polari \ totem \ corebird \ gnome-recipes \ gnome-twitch \ gnome-twitch-player-backend-gstreamer-cairo \ gnome-twitch-player-backend-gstreamer-clutter \ gnome-twitch-player-backend-gstreamer-opengl \ pitivi \ libclutter-1.0-dev \ libclutter-1.0-doc \ libclutter-gst-3.0-dev \ libclutter-gst-3.0-doc \ libclutter-gtk-1 …" />
 <meta property="og:site_name" content="Notes" />
 <meta property="og:article:author" content="Yaty Lee" />
 <meta property="og:article:published_time" content="2000-01-01T00:00:00+08:00" />
 <meta name="twitter:title" content="Ubuntu ">
-<meta name="twitter:description" content="显卡驱动 sudo apt install --no-install-recommends \ nvidia-384 nvidia-prime 如果安装的是Ubuntu Gnome 16.04，需要额外安装 gdm Gnome软件 sudo apt install --no-install-recommends \ ibus-libpinyin \ gnome-boxes \ gnome-builder \ gnome-calculator \ gnome-calendar \ gnome-contacts \ gnome-dictionary \ gnome-documents \ gnome-games-app \ gnome-maps \ gnome-music \ gnome-todo \ gnome-weather \ polari \ totem \ corebird \ gnome-recipes \ gnome-twitch \ gnome-twitch-player-backend-gstreamer-cairo \ gnome-twitch-player-backend-gstreamer-clutter \ gnome-twitch-player-backend-gstreamer-opengl \ pitivi \ libclutter-1.0-dev \ libclutter-1.0-doc \ libclutter-gst-3.0-dev \ libclutter-gst-3.0-doc \ libclutter-gtk-1.0-dev …">
+<meta name="twitter:description" content="显卡驱动 sudo apt install --no-install-recommends \ nvidia-384 nvidia-prime 如果安装的是Ubuntu Gnome 16.04，需要额外安装 gdm Gnome软件 sudo apt install --no-install-recommends \ ibus-libpinyin \ gnome-boxes \ gnome-builder \ gnome-calculator \ gnome-calendar \ gnome-contacts \ gnome-dictionary \ gnome-documents \ gnome-games-app \ gnome-maps \ gnome-music \ gnome-photos \ gnome-todo \ gnome-weather \ polari \ totem \ corebird \ gnome-recipes \ gnome-twitch \ gnome-twitch-player-backend-gstreamer-cairo \ gnome-twitch-player-backend-gstreamer-clutter \ gnome-twitch-player-backend-gstreamer-opengl \ pitivi \ libclutter-1.0-dev \ libclutter-1.0-doc \ libclutter-gst-3.0-dev \ libclutter-gst-3.0-doc \ libclutter-gtk-1 …">
 
         <title>Ubuntu  · Notes
 </title>
@@ -81,6 +81,8 @@
 <li><a href="#_4">服务端</a></li>
 </ul>
 </li>
+<li><a href="#polipo">polipo设置</a></li>
+<li><a href="#proxychains">proxychains设置</a></li>
 <li><a href="#pelican">安装Pelican</a></li>
 <li><a href="#_5">系统配置</a><ul>
 <li><a href="#_6">主题和字体</a></li>
@@ -96,6 +98,10 @@
 <li><a href="#wget">wget参数</a></li>
 <li><a href="#box">Box客户端</a></li>
 <li><a href="#_11">编写代理文件</a></li>
+<li><a href="#_12">应用图标</a><ul>
+<li><a href="#android-studio-android-studiodesktop">Android Studio (android-studio.desktop)</a></li>
+</ul>
+</li>
 </ul>
 </div>
         </nav>
@@ -123,6 +129,7 @@ gnome-documents <span class="se">\</span>
 gnome-games-app <span class="se">\</span>
 gnome-maps <span class="se">\</span>
 gnome-music <span class="se">\</span>
+gnome-photos <span class="se">\</span>
 gnome-todo <span class="se">\</span>
 gnome-weather <span class="se">\</span>
 polari <span class="se">\</span>
@@ -202,7 +209,6 @@ cmake cmake-doc pkg-config <span class="se">\</span>
 llvm clang clang-format llvm-4.0-doc clang-4.0-doc <span class="se">\</span>
 golang <span class="se">\</span>
 openjdk-8-jdk openjdk-8-doc openjdk-8-source openjdk-8-demo <span class="se">\</span>
-lib64ncurses5-dev ncurses-doc <span class="se">\</span>
 libappindicator-dev libappindicator-doc <span class="se">\</span>
 libatk1.0-dev libatk1.0-doc <span class="se">\</span>
 libatkmm-1.6-dev libatkmm-1.6-doc <span class="se">\</span>
@@ -221,7 +227,9 @@ libglib2.0-dev libglib2.0-doc <span class="se">\</span>
 libgstreamermm-1.0-dev libgstreamermm-1.0-doc <span class="se">\</span>
 libice-dev libice-doc <span class="se">\</span>
 libjson-glib-dev libjson-glib-doc <span class="se">\</span>
+libltdl-dev libtool-doc <span class="se">\</span>
 liblzma-dev liblzma-doc <span class="se">\</span>
+libncurses5-dev ncurses-doc <span class="se">\</span>
 libnotify-dev libnotify-doc <span class="se">\</span>
 libpango1.0-dev libpango1.0-doc <span class="se">\</span>
 libsdl-mixer1.2-dev <span class="se">\</span>
@@ -238,6 +246,7 @@ libvdpau-dev libvdpau-doc <span class="se">\</span>
 libx11-dev libx11-doc <span class="se">\</span>
 libxml++2.6-dev libxml++2.6-doc <span class="se">\</span>
 libxml2-dev libxml2-doc <span class="se">\</span>
+llvm-dev <span class="se">\</span>
 python-dev python-doc <span class="se">\</span>
 python3-dev python3-doc <span class="se">\</span>
 </pre></div>
@@ -268,6 +277,20 @@ shadowsocks M2Crypto
 <li>修改配置文件<code>/etc/shadowsocks/config.json</code>，将字段<code>server</code>修改为<code>0.0.0.0</code></li>
 </ul>
 <hr/>
+<h3 id="polipo">polipo设置</h3>
+<blockquote>
+<p>默认端口 8123</p>
+</blockquote>
+<p>修改文件 <code>/etc/polipo/config</code>，增加以下配置</p>
+<div class="highlight"><pre><span></span>proxyAddress = "0.0.0.0"
+allowedClients = 127.0.0.1, 192.168.0.0/16
+socksParentProxy = "localhost:1080"
+socksProxyType = socks5
+</pre></div>
+<hr/>
+<h3 id="proxychains">proxychains设置</h3>
+<p>修改文件 <code>/etc/proxychains.conf</code>，删除原来的 <code>socks4</code> 配置，增加新的配置 <code>socks5 IP PORT</code></p>
+<hr/>
 <h3 id="pelican">安装Pelican</h3>
 <blockquote>
 <p>静态博客</p>
@@ -290,6 +313,16 @@ pelican Markdown beautifulsoup4 typogrify ghp-import
 <li>壁纸安装目录 <code>/usr/share/backgrounds</code> 及 <code>~/.local/share/backgrounds/</code></li>
 <li>字体安装目录 <code>/usr/share/fonts</code> 及 <code>~/.local/share/fonts/</code></li>
 </ul>
+<p>下载</p>
+<div class="highlight"><pre><span></span><span class="c1"># Vimix-Gtk-Theme</span>
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1513512805/s/3d9d7459c7395278cd8974ab62347951/t/1513669455/Vimix-Dark-Theme.tar.xz
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1513512788/s/3d9d7459c7395278cd8974ab62347951/t/1513669455/Vimix-Light-Theme.tar.xz
+<span class="c1"># Vimix-Icon-Theme</span>
+wget https://github.com/vinceliuice/vimix-icon-theme/archive/2017.09.24.tar.gz
+<span class="c1"># Wallpapers</span>
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1506049886/s/f81518fae8c0fbc9ababee59e1893113/t/1513672104/lakeu.zip
+</pre></div>
+<p>设置</p>
 <div class="highlight"><pre><span></span>gsettings get org.gnome.desktop.interface gtk-theme
 gsettings <span class="nb">set</span> org.gnome.desktop.interface gtk-theme <span class="s1">'THEME'</span>
 
@@ -448,6 +481,23 @@ python get-pip.py --user
     <span class="p">}</span>
     <span class="k">return</span> <span class="s2">"DIRECT"</span>
 <span class="p">}</span>
+</pre></div>
+<hr/>
+<h3 id="_12">应用图标</h3>
+<blockquote>
+<p>图标路径 <code>~/.local/share/applications/</code></p>
+</blockquote>
+<h4 id="android-studio-android-studiodesktop">Android Studio (android-studio.desktop)</h4>
+<div class="highlight"><pre><span></span><span class="k">[Desktop Entry]</span>
+<span class="na">Version</span><span class="o">=</span><span class="s">1.0</span>
+<span class="na">Type</span><span class="o">=</span><span class="s">Application</span>
+<span class="na">Name</span><span class="o">=</span><span class="s">Android Studio</span>
+<span class="na">Icon</span><span class="o">=</span><span class="s">android-studio</span>
+<span class="na">Exec</span><span class="o">=</span><span class="s">/opt/android-studio/bin/studio.sh %f</span>
+<span class="na">Comment</span><span class="o">=</span><span class="s">IDE for Android Development</span>
+<span class="na">Categories</span><span class="o">=</span><span class="s">Development;IDE;</span>
+<span class="na">Terminal</span><span class="o">=</span><span class="s">false</span>
+<span class="na">StartupWMClass</span><span class="o">=</span><span class="s">jetbrains-android-studio</span>
 </pre></div>
             
             

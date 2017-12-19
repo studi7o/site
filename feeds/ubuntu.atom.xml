@@ -19,6 +19,7 @@ gnome-documents &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-games-app &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-maps &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-music &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-photos &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-todo &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-weather &lt;span class="se"&gt;\&lt;/span&gt;
 polari &lt;span class="se"&gt;\&lt;/span&gt;
@@ -34,7 +35,7 @@ libclutter-1.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
 libclutter-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libclutter-gst-3.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
 libclutter-gst-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
-libclutter-gtk-1.0-dev …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
+libclutter-gtk-1 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
 &lt;h3 id="_1"&gt;显卡驱动&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends \
 nvidia-384 nvidia-prime
@@ -54,6 +55,7 @@ gnome-documents &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-games-app &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-maps &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-music &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-photos &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-todo &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-weather &lt;span class="se"&gt;\&lt;/span&gt;
 polari &lt;span class="se"&gt;\&lt;/span&gt;
@@ -133,7 +135,6 @@ cmake cmake-doc pkg-config &lt;span class="se"&gt;\&lt;/span&gt;
 llvm clang clang-format llvm-4.0-doc clang-4.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 golang &lt;span class="se"&gt;\&lt;/span&gt;
 openjdk-8-jdk openjdk-8-doc openjdk-8-source openjdk-8-demo &lt;span class="se"&gt;\&lt;/span&gt;
-lib64ncurses5-dev ncurses-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libappindicator-dev libappindicator-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libatk1.0-dev libatk1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libatkmm-1.6-dev libatkmm-1.6-doc &lt;span class="se"&gt;\&lt;/span&gt;
@@ -152,7 +153,9 @@ libglib2.0-dev libglib2.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libgstreamermm-1.0-dev libgstreamermm-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libice-dev libice-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libjson-glib-dev libjson-glib-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libltdl-dev libtool-doc &lt;span class="se"&gt;\&lt;/span&gt;
 liblzma-dev liblzma-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libncurses5-dev ncurses-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libnotify-dev libnotify-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libpango1.0-dev libpango1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libsdl-mixer1.2-dev &lt;span class="se"&gt;\&lt;/span&gt;
@@ -169,6 +172,7 @@ libvdpau-dev libvdpau-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libx11-dev libx11-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libxml++2.6-dev libxml++2.6-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libxml2-dev libxml2-doc &lt;span class="se"&gt;\&lt;/span&gt;
+llvm-dev &lt;span class="se"&gt;\&lt;/span&gt;
 python-dev python-doc &lt;span class="se"&gt;\&lt;/span&gt;
 python3-dev python3-doc &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -199,6 +203,20 @@ shadowsocks M2Crypto
 &lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;，将字段&lt;code&gt;server&lt;/code&gt;修改为&lt;code&gt;0.0.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr/&gt;
+&lt;h3 id="polipo"&gt;polipo设置&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;默认端口 8123&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;修改文件 &lt;code&gt;/etc/polipo/config&lt;/code&gt;，增加以下配置&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;proxyAddress = "0.0.0.0"
+allowedClients = 127.0.0.1, 192.168.0.0/16
+socksParentProxy = "localhost:1080"
+socksProxyType = socks5
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="proxychains"&gt;proxychains设置&lt;/h3&gt;
+&lt;p&gt;修改文件 &lt;code&gt;/etc/proxychains.conf&lt;/code&gt;，删除原来的 &lt;code&gt;socks4&lt;/code&gt; 配置，增加新的配置 &lt;code&gt;socks5 IP PORT&lt;/code&gt;&lt;/p&gt;
+&lt;hr/&gt;
 &lt;h3 id="pelican"&gt;安装Pelican&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;静态博客&lt;/p&gt;
@@ -221,6 +239,16 @@ pelican Markdown beautifulsoup4 typogrify ghp-import
 &lt;li&gt;壁纸安装目录 &lt;code&gt;/usr/share/backgrounds&lt;/code&gt; 及 &lt;code&gt;~/.local/share/backgrounds/&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;字体安装目录 &lt;code&gt;/usr/share/fonts&lt;/code&gt; 及 &lt;code&gt;~/.local/share/fonts/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;下载&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Vimix-Gtk-Theme&lt;/span&gt;
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1513512805/s/3d9d7459c7395278cd8974ab62347951/t/1513669455/Vimix-Dark-Theme.tar.xz
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1513512788/s/3d9d7459c7395278cd8974ab62347951/t/1513669455/Vimix-Light-Theme.tar.xz
+&lt;span class="c1"&gt;# Vimix-Icon-Theme&lt;/span&gt;
+wget https://github.com/vinceliuice/vimix-icon-theme/archive/2017.09.24.tar.gz
+&lt;span class="c1"&gt;# Wallpapers&lt;/span&gt;
+wget https://dl.opendesktop.org/api/files/downloadfile/id/1506049886/s/f81518fae8c0fbc9ababee59e1893113/t/1513672104/lakeu.zip
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;设置&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings get org.gnome.desktop.interface gtk-theme
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface gtk-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
 
@@ -379,4 +407,21 @@ python get-pip.py --user
     &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"DIRECT"&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h3 id="_12"&gt;应用图标&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图标路径 &lt;code&gt;~/.local/share/applications/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id="android-studio-android-studiodesktop"&gt;Android Studio (android-studio.desktop)&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[Desktop Entry]&lt;/span&gt;
+&lt;span class="na"&gt;Version&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;1.0&lt;/span&gt;
+&lt;span class="na"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Application&lt;/span&gt;
+&lt;span class="na"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Android Studio&lt;/span&gt;
+&lt;span class="na"&gt;Icon&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;android-studio&lt;/span&gt;
+&lt;span class="na"&gt;Exec&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/opt/android-studio/bin/studio.sh %f&lt;/span&gt;
+&lt;span class="na"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;IDE for Android Development&lt;/span&gt;
+&lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Development;IDE;&lt;/span&gt;
+&lt;span class="na"&gt;Terminal&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
+&lt;span class="na"&gt;StartupWMClass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;jetbrains-android-studio&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</content></entry></feed>
