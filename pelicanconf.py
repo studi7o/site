@@ -21,9 +21,10 @@ MARKDOWN = {
 	'output_format': 'html5'
 }
 
-STATIC_PATHS = ['favicon.ico', 'gnome.sh']
+STATIC_PATHS = ['favicon.ico', 'proxy.pac', 'gnome.sh']
 EXTRA_PATH_METADATA = {
 	'favicon.ico': {'path': 'favicon.ico'},
+	'proxy.pac': {'path': 'proxy.pac'},
 	'gnome.sh': {'path': 'gnome.sh'}
 }
 
