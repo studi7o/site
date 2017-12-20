@@ -171,4 +171,5 @@ Date: 2000-01-01 00:00
 * [Polyline/BezierDrawMethod.java at master · 82367825/Polyline](https://github.com/82367825/Polyline/blob/master/app/src/main/java/com/zero/polyline/BezierDrawMethod.java)
 * [OptimusPrimeRen/Android-O-Adaptive: Android O shortcut manage demo](https://github.com/OptimusPrimeRen/Android-O-Adaptive)
 * [Beyond Compare](https://www.scootersoftware.com/)
+* [有关ARM编译环境](https://fadeer.github.io/工作/2014/12/19/arm-build-env.html)
 

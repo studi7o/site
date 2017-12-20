@@ -21,7 +21,6 @@ gnome-twitch \
 gnome-twitch-player-backend-gstreamer-cairo \
 gnome-twitch-player-backend-gstreamer-clutter \
 gnome-twitch-player-backend-gstreamer-opengl \
-pitivi \
 libclutter-1.0-dev \
 libclutter-1.0-doc \
 libclutter-gst-3.0-dev \
@@ -54,7 +53,7 @@ fping hping3 netcat nmap \
 samba smbclient samba-dsdb-modules samba-vfs-modules \
 vsftpd sqlite3 sqlite3-doc \
 qemu qemu-user-static \
-build-essential cppcheck glibc-doc gcc-doc libstdc++-7-doc make-doc \
+build-essential cppcheck glibc-doc gcc-doc libstdc++-6-doc make-doc \
 gcc-multilib g++-multilib gcc-arm-none-eabi gdb-arm-none-eabi \
 gdb gdb-doc \
 autoconf autoconf-doc automake libtool libtool-doc \
