@@ -5,7 +5,7 @@
 nvidia-384 nvidia-prime
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;如果安装的是Ubuntu Gnome 16.04，需要额外安装 &lt;code&gt;gdm&lt;/code&gt;&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="gnome"&gt;Gnome软件&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 ibus-libpinyin &lt;span class="se"&gt;\&lt;/span&gt;
@@ -41,7 +41,7 @@ libclutter-gtk-1 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
 nvidia-384 nvidia-prime
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;如果安装的是Ubuntu Gnome 16.04，需要额外安装 &lt;code&gt;gdm&lt;/code&gt;&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="gnome"&gt;Gnome软件&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 ibus-libpinyin &lt;span class="se"&gt;\&lt;/span&gt;
@@ -84,7 +84,7 @@ libgtkmm-3.0-dev libgtkmm-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libgtksourceview-3.0-dev libgtksourceview-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libwebkit2gtk-4.0-dev libwebkit2gtk-4.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="kde"&gt;KDE软件&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 fcitx-googlepinyin &lt;span class="se"&gt;\&lt;/span&gt;
@@ -108,7 +108,7 @@ qtmultimedia5-dev qtmultimedia5-doc qtmultimedia5-doc-html qtmultimedia5-example
 qtscript5-dev qtscript5-doc qtscript5-doc-html qtscript5-examples &lt;span class="se"&gt;\&lt;/span&gt;
 qttools5-dev qttools5-doc qttools5-doc-html qttools5-examples &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="_2"&gt;其他软件&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 ffmpeg ffmpeg-doc &lt;span class="se"&gt;\&lt;/span&gt;
@@ -127,7 +127,7 @@ fping hping3 netcat nmap &lt;span class="se"&gt;\&lt;/span&gt;
 samba smbclient samba-dsdb-modules samba-vfs-modules &lt;span class="se"&gt;\&lt;/span&gt;
 vsftpd sqlite3 sqlite3-doc &lt;span class="se"&gt;\&lt;/span&gt;
 qemu qemu-user-static &lt;span class="se"&gt;\&lt;/span&gt;
-build-essential cppcheck glibc-doc gcc-doc libstdc++-7-doc make-doc &lt;span class="se"&gt;\&lt;/span&gt;
+build-essential cppcheck glibc-doc gcc-doc libstdc++-6-doc make-doc &lt;span class="se"&gt;\&lt;/span&gt;
 gcc-multilib g++-multilib gcc-arm-none-eabi gdb-arm-none-eabi &lt;span class="se"&gt;\&lt;/span&gt;
 gdb gdb-doc &lt;span class="se"&gt;\&lt;/span&gt;
 autoconf autoconf-doc automake libtool libtool-doc &lt;span class="se"&gt;\&lt;/span&gt;
@@ -176,13 +176,13 @@ llvm-dev &lt;span class="se"&gt;\&lt;/span&gt;
 python-dev python-doc &lt;span class="se"&gt;\&lt;/span&gt;
 python3-dev python3-doc &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="32bit"&gt;32bit库&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Android Studio&lt;/span&gt;
 sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 lib32ncurses5 lib32stdc++6 lib32z1
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="shadowsocks"&gt;安装Shadowsocks&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;翻墙&lt;/p&gt;
@@ -202,7 +202,7 @@ shadowsocks M2Crypto
 &lt;ul&gt;
 &lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;，将字段&lt;code&gt;server&lt;/code&gt;修改为&lt;code&gt;0.0.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="polipo"&gt;polipo设置&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;默认端口 8123&lt;/p&gt;
@@ -213,10 +213,10 @@ allowedClients = 127.0.0.1, 192.168.0.0/16
 socksParentProxy = "localhost:1080"
 socksProxyType = socks5
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="proxychains"&gt;proxychains设置&lt;/h3&gt;
 &lt;p&gt;修改文件 &lt;code&gt;/etc/proxychains.conf&lt;/code&gt;，删除原来的 &lt;code&gt;socks4&lt;/code&gt; 配置，增加新的配置 &lt;code&gt;socks5 IP PORT&lt;/code&gt;&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="pelican"&gt;安装Pelican&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;静态博客&lt;/p&gt;
@@ -230,7 +230,7 @@ pelican Markdown beautifulsoup4 typogrify ghp-import
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;ghp-import&lt;/code&gt;的参数&lt;code&gt;-c CNAME&lt;/code&gt;可自动生成&lt;code&gt;CNAME&lt;/code&gt;文件&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="_5"&gt;系统配置&lt;/h3&gt;
 &lt;h4 id="_6"&gt;主题和字体&lt;/h4&gt;
 &lt;ul&gt;
@@ -343,7 +343,7 @@ gsettings get org.gnome.nautilus.preferences show-directory-item-counts
 
 gsettings get org.gnome.settings-daemon.plugins.power button-power
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="git"&gt;git设置&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global user.name &lt;span class="s2"&gt;"Yaty Lee"&lt;/span&gt;
 git config --global user.email &lt;span class="s2"&gt;"studi7o@mail.ru"&lt;/span&gt;
@@ -353,12 +353,12 @@ git config --global http.sslVerify &lt;span class="nb"&gt;false&lt;/span&gt;
 git config --global http.postBuffer &lt;span class="m"&gt;524288000&lt;/span&gt;
 git config --global http.proxy &lt;span class="s2"&gt;"socks5://IP:PORT"&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="android"&gt;Android开发设置&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo wget https://github.com/M0Rf30/android-udev-rules/raw/master/51-android.rules &lt;span class="se"&gt;\&lt;/span&gt;
 -P /etc/udev/rules.d
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="python"&gt;python设置&lt;/h3&gt;
 &lt;p&gt;更换国内源&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.config/pip/ &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.pip/
@@ -376,16 +376,16 @@ easy_install --user pip
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py --user
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="wget"&gt;wget参数&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;--tries=1&lt;/code&gt;：修改下载次数为1，默认是20次&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;-e http_proxy=http://ip:port -e https_proxy=http://ip:port -e ftp_proxy=http://ip:port&lt;/code&gt;：设置代理&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="box"&gt;Box客户端&lt;/h3&gt;
 &lt;p&gt;在 Nautilus 中连接 &lt;code&gt;davs://dav.box.com/&lt;/code&gt;&lt;/p&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="_11"&gt;编写代理文件&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;PROXY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"SOCKS5 127.0.0.1:1080; DIRECT"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
@@ -408,7 +408,7 @@ python get-pip.py --user
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"DIRECT"&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;hr/&gt;
+&lt;hr&gt;
 &lt;h3 id="_12"&gt;应用图标&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;图标路径 &lt;code&gt;~/.local/share/applications/&lt;/code&gt;&lt;/p&gt;
@@ -424,4 +424,4 @@ python get-pip.py --user
 &lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Development;IDE;&lt;/span&gt;
 &lt;span class="na"&gt;Terminal&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
 &lt;span class="na"&gt;StartupWMClass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;jetbrains-android-studio&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content></entry></feed>
+&lt;/pre&gt;&lt;/div&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;</content></entry></feed>
