@@ -265,6 +265,9 @@ gsettings set org.gnome.desktop.wm.preferences theme  'THEME'
 gsettings get org.gnome.desktop.interface icon-theme
 gsettings set org.gnome.desktop.interface icon-theme 'THEME'
 
+gsettings get org.gnome.shell.extensions.user-theme name
+gsettings set org.gnome.shell.extensions.user-theme name 'THEME'
+
 gsettings get org.gnome.desktop.interface cursor-theme
 gsettings set org.gnome.desktop.interface cursor-theme 'THEME'
 
@@ -286,6 +289,8 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-uses-system-font false
 gsettings get org.gnome.desktop.wm.preferences titlebar-font
 gsettings set org.gnome.desktop.wm.preferences titlebar-font 'FONT' # 'Ubuntu Bold 11'
 ```
+
+> 修改 Gnome Shell 的主题还需要执行 `gnome-shell-extension-prefs`，启用其中的 `User Themes`
 
 #### 登录界面背景
 
