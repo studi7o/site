@@ -50,6 +50,7 @@ libclutter-gtk-1.0-dev \
 libclutter-gtk-1.0-doc \
 libgail-dev libgail-doc \
 libgail-3-dev libgail-3-doc \
+libgconf2-dev libgconf2-doc \
 libgtk-3-dev libgtk-3-doc \
 libgtk2.0-dev libgtk2.0-doc \
 libgtkdatabox-dev libgtkdatabox-doc \
@@ -113,6 +114,7 @@ qemu qemu-user-static \
 build-essential cppcheck glibc-doc gcc-doc libstdc++-6-doc make-doc \
 gcc-multilib g++-multilib gcc-arm-none-eabi gdb-arm-none-eabi \
 gdb gdb-doc \
+texinfo texinfo-doc-nonfree \
 autoconf autoconf-doc automake libtool libtool-doc \
 cmake cmake-doc pkg-config \
 llvm clang clang-format llvm-4.0-doc clang-4.0-doc \
@@ -468,4 +470,19 @@ Comment=IDE for Android Development
 Categories=Development;IDE;
 Terminal=false
 StartupWMClass=jetbrains-android-studio
+```
+
+#### Atom (atom.desktop)
+
+``` txt
+[Desktop Entry]
+Name=Atom
+Comment=A hackable text editor for the 21st Century.
+GenericName=Text Editor
+Exec=/opt/atom/atom %F
+Icon=atom
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;TextEditor;Development;
+MimeType=text/plain;
 ```
