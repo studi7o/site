@@ -9854,11 +9854,11 @@ gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface gt
 gsettings get org.gnome.desktop.wm.preferences theme
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferences theme  &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
 
-gsettings get org.gnome.desktop.interface icon-theme
-gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface icon-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
-
 gsettings get org.gnome.shell.extensions.user-theme name
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.shell.extensions.user-theme name &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
+
+gsettings get org.gnome.desktop.interface icon-theme
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface icon-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
 
 gsettings get org.gnome.desktop.interface cursor-theme
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface cursor-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
