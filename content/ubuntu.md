@@ -21,7 +21,7 @@ nvidia-384 nvidia-prime
 sudo apt install --no-install-recommends \
 ibus-libpinyin \
 gnome-boxes \
-gnome-builder \
+gnome-builder flatpak-builder \
 gnome-calculator \
 gnome-calendar \
 gnome-contacts \
@@ -115,7 +115,7 @@ build-essential cppcheck glibc-doc gcc-doc libstdc++-6-doc make-doc \
 gcc-multilib g++-multilib gcc-arm-none-eabi gdb-arm-none-eabi \
 gdb gdb-doc \
 texinfo texinfo-doc-nonfree \
-autoconf autoconf-doc automake libtool libtool-doc \
+autoconf autoconf-doc automake autopoint libtool libtool-doc \
 cmake cmake-doc pkg-config \
 llvm clang clang-format llvm-4.0-doc clang-4.0-doc \
 golang \
