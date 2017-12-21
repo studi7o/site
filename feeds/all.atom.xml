@@ -9608,7 +9608,7 @@ nvidia-384 nvidia-prime
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 ibus-libpinyin &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-boxes &lt;span class="se"&gt;\&lt;/span&gt;
-gnome-builder &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-builder flatpak-builder &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-calculator &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-calendar &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-contacts &lt;span class="se"&gt;\&lt;/span&gt;
@@ -9632,8 +9632,7 @@ pitivi &lt;span class="se"&gt;\&lt;/span&gt;
 libclutter-1.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
 libclutter-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libclutter-gst-3.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
-libclutter-gst-3.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
-libclutter-gtk-1 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
+libclutter-gst-3.0-doc …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
 &lt;h3 id="_1"&gt;显卡驱动&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends \
 nvidia-384 nvidia-prime
@@ -9644,7 +9643,7 @@ nvidia-384 nvidia-prime
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 ibus-libpinyin &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-boxes &lt;span class="se"&gt;\&lt;/span&gt;
-gnome-builder &lt;span class="se"&gt;\&lt;/span&gt;
+gnome-builder flatpak-builder &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-calculator &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-calendar &lt;span class="se"&gt;\&lt;/span&gt;
 gnome-contacts &lt;span class="se"&gt;\&lt;/span&gt;
@@ -9673,6 +9672,7 @@ libclutter-gtk-1.0-dev &lt;span class="se"&gt;\&lt;/span&gt;
 libclutter-gtk-1.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libgail-dev libgail-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libgail-3-dev libgail-3-doc &lt;span class="se"&gt;\&lt;/span&gt;
+libgconf2-dev libgconf2-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libgtk-3-dev libgtk-3-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libgtk2.0-dev libgtk2.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 libgtkdatabox-dev libgtkdatabox-doc &lt;span class="se"&gt;\&lt;/span&gt;
@@ -9728,7 +9728,8 @@ qemu qemu-user-static &lt;span class="se"&gt;\&lt;/span&gt;
 build-essential cppcheck glibc-doc gcc-doc libstdc++-6-doc make-doc &lt;span class="se"&gt;\&lt;/span&gt;
 gcc-multilib g++-multilib gcc-arm-none-eabi gdb-arm-none-eabi &lt;span class="se"&gt;\&lt;/span&gt;
 gdb gdb-doc &lt;span class="se"&gt;\&lt;/span&gt;
-autoconf autoconf-doc automake libtool libtool-doc &lt;span class="se"&gt;\&lt;/span&gt;
+texinfo texinfo-doc-nonfree &lt;span class="se"&gt;\&lt;/span&gt;
+autoconf autoconf-doc automake autopoint libtool libtool-doc &lt;span class="se"&gt;\&lt;/span&gt;
 cmake cmake-doc pkg-config &lt;span class="se"&gt;\&lt;/span&gt;
 llvm clang clang-format llvm-4.0-doc clang-4.0-doc &lt;span class="se"&gt;\&lt;/span&gt;
 golang &lt;span class="se"&gt;\&lt;/span&gt;
@@ -9856,6 +9857,9 @@ gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferenc
 gsettings get org.gnome.desktop.interface icon-theme
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface icon-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
 
+gsettings get org.gnome.shell.extensions.user-theme name
+gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.shell.extensions.user-theme name &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
+
 gsettings get org.gnome.desktop.interface cursor-theme
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.interface cursor-theme &lt;span class="s1"&gt;'THEME'&lt;/span&gt;
 
@@ -9877,6 +9881,9 @@ gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferenc
 gsettings get org.gnome.desktop.wm.preferences titlebar-font
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferences titlebar-font &lt;span class="s1"&gt;'FONT'&lt;/span&gt; &lt;span class="c1"&gt;# 'Ubuntu Bold 11'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;修改 Gnome Shell 的主题还需要执行 &lt;code&gt;gnome-shell-extension-prefs&lt;/code&gt;，启用其中的 &lt;code&gt;User Themes&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id="_7"&gt;登录界面背景&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/"&gt;Change Login Screen Background&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id="_8"&gt;输入法&lt;/h4&gt;
@@ -10022,4 +10029,16 @@ python get-pip.py --user
 &lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Development;IDE;&lt;/span&gt;
 &lt;span class="na"&gt;Terminal&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
 &lt;span class="na"&gt;StartupWMClass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;jetbrains-android-studio&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="atom-atomdesktop"&gt;Atom (atom.desktop)&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[Desktop Entry]&lt;/span&gt;
+&lt;span class="na"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Atom&lt;/span&gt;
+&lt;span class="na"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;A hackable text editor for the 21st Century.&lt;/span&gt;
+&lt;span class="na"&gt;GenericName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Text Editor&lt;/span&gt;
+&lt;span class="na"&gt;Exec&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/opt/atom/atom %F&lt;/span&gt;
+&lt;span class="na"&gt;Icon&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;atom&lt;/span&gt;
+&lt;span class="na"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Application&lt;/span&gt;
+&lt;span class="na"&gt;StartupNotify&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;GNOME;GTK;Utility;TextEditor;Development;&lt;/span&gt;
+&lt;span class="na"&gt;MimeType&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;text/plain;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;</content></entry></feed>
