@@ -262,11 +262,11 @@ gsettings set org.gnome.desktop.interface gtk-theme 'THEME'
 gsettings get org.gnome.desktop.wm.preferences theme
 gsettings set org.gnome.desktop.wm.preferences theme  'THEME'
 
-gsettings get org.gnome.desktop.interface icon-theme
-gsettings set org.gnome.desktop.interface icon-theme 'THEME'
-
 gsettings get org.gnome.shell.extensions.user-theme name
 gsettings set org.gnome.shell.extensions.user-theme name 'THEME'
+
+gsettings get org.gnome.desktop.interface icon-theme
+gsettings set org.gnome.desktop.interface icon-theme 'THEME'
 
 gsettings get org.gnome.desktop.interface cursor-theme
 gsettings set org.gnome.desktop.interface cursor-theme 'THEME'
