@@ -174,6 +174,13 @@ lib32ncurses5 lib32stdc++6 lib32z1
 
 * * *
 
+### 缺失语言包
+
+``` sh
+sudo apt install --no-install-recommends \
+$(check-language-support)
+```
+
 ### 安装Shadowsocks
 
 > 翻墙
@@ -491,3 +498,19 @@ StartupNotify=true
 Categories=GNOME;GTK;Utility;TextEditor;Development;
 MimeType=text/plain;
 ```
+
+#### Typora (typora.desktop)
+
+``` txt
+[Desktop Entry]
+Name=Typora
+Comment=a minimal Markdown reading & writing app.
+GenericName=Markdown Editor
+Exec=/opt/typora/Typora %U
+Icon=typora
+Type=Application
+StartupNotify=true
+Categories=Office;WordProcessor;
+MimeType=text/markdown;text/x-markdown;
+```
+
