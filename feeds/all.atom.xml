@@ -9782,6 +9782,10 @@ sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
 lib32ncurses5 lib32stdc++6 lib32z1
 &lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
+&lt;h3 id="_3"&gt;缺失语言包&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt install --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="k"&gt;$(&lt;/span&gt;check-language-support&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id="shadowsocks"&gt;安装Shadowsocks&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;翻墙&lt;/p&gt;
@@ -9792,12 +9796,12 @@ shadowsocks
 pip install --user &lt;span class="se"&gt;\&lt;/span&gt;
 shadowsocks M2Crypto
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id="_3"&gt;客户端&lt;/h4&gt;
+&lt;h4 id="_4"&gt;客户端&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;修改服务文件&lt;code&gt;/etc/init.d/shadowsocks&lt;/code&gt;，将变量&lt;code&gt;DAEMON&lt;/code&gt;更改为&lt;code&gt;/usr/bin/sslocal&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id="_4"&gt;服务端&lt;/h4&gt;
+&lt;h4 id="_5"&gt;服务端&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;修改配置文件&lt;code&gt;/etc/shadowsocks/config.json&lt;/code&gt;，将字段&lt;code&gt;server&lt;/code&gt;修改为&lt;code&gt;0.0.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -9830,8 +9834,8 @@ pelican Markdown beautifulsoup4 typogrify ghp-import
 &lt;li&gt;&lt;code&gt;ghp-import&lt;/code&gt;的参数&lt;code&gt;-c CNAME&lt;/code&gt;可自动生成&lt;code&gt;CNAME&lt;/code&gt;文件&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h3 id="_5"&gt;系统配置&lt;/h3&gt;
-&lt;h4 id="_6"&gt;主题和字体&lt;/h4&gt;
+&lt;h3 id="_6"&gt;系统配置&lt;/h3&gt;
+&lt;h4 id="_7"&gt;主题和字体&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;主题安装目录 &lt;code&gt;/usr/share/themes&lt;/code&gt; 及 &lt;code&gt;~/.local/share/themes/&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;图标安装目录 &lt;code&gt;/usr/share/icons&lt;/code&gt; 及 &lt;code&gt;~/.local/share/icons/&lt;/code&gt;&lt;/li&gt;
@@ -9884,13 +9888,13 @@ gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.desktop.wm.preferenc
 &lt;blockquote&gt;
 &lt;p&gt;修改 Gnome Shell 的主题还需要执行 &lt;code&gt;gnome-shell-extension-prefs&lt;/code&gt;，启用其中的 &lt;code&gt;User Themes&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id="_7"&gt;登录界面背景&lt;/h4&gt;
+&lt;h4 id="_8"&gt;登录界面背景&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/"&gt;Change Login Screen Background&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="_8"&gt;输入法&lt;/h4&gt;
+&lt;h4 id="_9"&gt;输入法&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings get org.gnome.desktop.input-sources sources
 &lt;span class="c1"&gt;# [('ibus', 'libpinyin')]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id="_9"&gt;代理&lt;/h4&gt;
+&lt;h4 id="_10"&gt;代理&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings list-recursively org.gnome.system.proxy
 
 gsettings get org.gnome.system.proxy use-same-proxy
@@ -9905,7 +9909,7 @@ gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.system.proxy.socks h
 gsettings get org.gnome.system.proxy.socks port
 gsettings &lt;span class="nb"&gt;set&lt;/span&gt; org.gnome.system.proxy.socks port PORT
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id="_10"&gt;其他&lt;/h4&gt;
+&lt;h4 id="_11"&gt;其他&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gsettings get org.gnome.desktop.default-applications.terminal &lt;span class="nb"&gt;exec&lt;/span&gt;
 gsettings get org.gnome.desktop.default-applications.terminal exec-arg
 
@@ -9991,7 +9995,7 @@ python get-pip.py --user
 &lt;h3 id="box"&gt;Box客户端&lt;/h3&gt;
 &lt;p&gt;在 Nautilus 中连接 &lt;code&gt;davs://dav.box.com/&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id="_11"&gt;编写代理文件&lt;/h3&gt;
+&lt;h3 id="_12"&gt;编写代理文件&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;PROXY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"SOCKS5 127.0.0.1:1080; DIRECT"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;blocked&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -10014,7 +10018,7 @@ python get-pip.py --user
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
-&lt;h3 id="_12"&gt;应用图标&lt;/h3&gt;
+&lt;h3 id="_13"&gt;应用图标&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;图标路径 &lt;code&gt;~/.local/share/applications/&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -10041,4 +10045,16 @@ python get-pip.py --user
 &lt;span class="na"&gt;StartupNotify&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
 &lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;GNOME;GTK;Utility;TextEditor;Development;&lt;/span&gt;
 &lt;span class="na"&gt;MimeType&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;text/plain;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="typora-typoradesktop"&gt;Typora (typora.desktop)&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[Desktop Entry]&lt;/span&gt;
+&lt;span class="na"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Typora&lt;/span&gt;
+&lt;span class="na"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;a minimal Markdown reading &amp;amp; writing app.&lt;/span&gt;
+&lt;span class="na"&gt;GenericName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Markdown Editor&lt;/span&gt;
+&lt;span class="na"&gt;Exec&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/opt/typora/Typora %U&lt;/span&gt;
+&lt;span class="na"&gt;Icon&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;typora&lt;/span&gt;
+&lt;span class="na"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Application&lt;/span&gt;
+&lt;span class="na"&gt;StartupNotify&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Office;WordProcessor;&lt;/span&gt;
+&lt;span class="na"&gt;MimeType&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;text/markdown;text/x-markdown;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;</content></entry></feed>

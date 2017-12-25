@@ -76,20 +76,21 @@
 <li><a href="#kde">KDE软件</a></li>
 <li><a href="#_2">其他软件</a></li>
 <li><a href="#32bit">32bit库</a></li>
+<li><a href="#_3">缺失语言包</a></li>
 <li><a href="#shadowsocks">安装Shadowsocks</a><ul>
-<li><a href="#_3">客户端</a></li>
-<li><a href="#_4">服务端</a></li>
+<li><a href="#_4">客户端</a></li>
+<li><a href="#_5">服务端</a></li>
 </ul>
 </li>
 <li><a href="#polipo">polipo设置</a></li>
 <li><a href="#proxychains">proxychains设置</a></li>
 <li><a href="#pelican">安装Pelican</a></li>
-<li><a href="#_5">系统配置</a><ul>
-<li><a href="#_6">主题和字体</a></li>
-<li><a href="#_7">登录界面背景</a></li>
-<li><a href="#_8">输入法</a></li>
-<li><a href="#_9">代理</a></li>
-<li><a href="#_10">其他</a></li>
+<li><a href="#_6">系统配置</a><ul>
+<li><a href="#_7">主题和字体</a></li>
+<li><a href="#_8">登录界面背景</a></li>
+<li><a href="#_9">输入法</a></li>
+<li><a href="#_10">代理</a></li>
+<li><a href="#_11">其他</a></li>
 </ul>
 </li>
 <li><a href="#git">git设置</a></li>
@@ -97,10 +98,11 @@
 <li><a href="#python">python设置</a></li>
 <li><a href="#wget">wget参数</a></li>
 <li><a href="#box">Box客户端</a></li>
-<li><a href="#_11">编写代理文件</a></li>
-<li><a href="#_12">应用图标</a><ul>
+<li><a href="#_12">编写代理文件</a></li>
+<li><a href="#_13">应用图标</a><ul>
 <li><a href="#android-studio-android-studiodesktop">Android Studio (android-studio.desktop)</a></li>
 <li><a href="#atom-atomdesktop">Atom (atom.desktop)</a></li>
+<li><a href="#typora-typoradesktop">Typora (typora.desktop)</a></li>
 </ul>
 </li>
 </ul>
@@ -260,6 +262,10 @@ sudo apt install --no-install-recommends <span class="se">\</span>
 lib32ncurses5 lib32stdc++6 lib32z1
 </pre></div>
 <hr>
+<h3 id="_3">缺失语言包</h3>
+<div class="highlight"><pre><span></span>sudo apt install --no-install-recommends <span class="se">\</span>
+<span class="k">$(</span>check-language-support<span class="k">)</span>
+</pre></div>
 <h3 id="shadowsocks">安装Shadowsocks</h3>
 <blockquote>
 <p>翻墙</p>
@@ -270,12 +276,12 @@ shadowsocks
 pip install --user <span class="se">\</span>
 shadowsocks M2Crypto
 </pre></div>
-<h4 id="_3">客户端</h4>
+<h4 id="_4">客户端</h4>
 <ul>
 <li>修改服务文件<code>/etc/init.d/shadowsocks</code>，将变量<code>DAEMON</code>更改为<code>/usr/bin/sslocal</code></li>
 <li>修改配置文件<code>/etc/shadowsocks/config.json</code></li>
 </ul>
-<h4 id="_4">服务端</h4>
+<h4 id="_5">服务端</h4>
 <ul>
 <li>修改配置文件<code>/etc/shadowsocks/config.json</code>，将字段<code>server</code>修改为<code>0.0.0.0</code></li>
 </ul>
@@ -308,8 +314,8 @@ pelican Markdown beautifulsoup4 typogrify ghp-import
 <li><code>ghp-import</code>的参数<code>-c CNAME</code>可自动生成<code>CNAME</code>文件</li>
 </ul>
 <hr>
-<h3 id="_5">系统配置</h3>
-<h4 id="_6">主题和字体</h4>
+<h3 id="_6">系统配置</h3>
+<h4 id="_7">主题和字体</h4>
 <ul>
 <li>主题安装目录 <code>/usr/share/themes</code> 及 <code>~/.local/share/themes/</code></li>
 <li>图标安装目录 <code>/usr/share/icons</code> 及 <code>~/.local/share/icons/</code></li>
@@ -362,13 +368,13 @@ gsettings <span class="nb">set</span> org.gnome.desktop.wm.preferences titlebar-
 <blockquote>
 <p>修改 Gnome Shell 的主题还需要执行 <code>gnome-shell-extension-prefs</code>，启用其中的 <code>User Themes</code></p>
 </blockquote>
-<h4 id="_7">登录界面背景</h4>
+<h4 id="_8">登录界面背景</h4>
 <p><a href="http://ubuntuhandbook.org/index.php/2017/10/change-login-screen-background-ubuntu-17-10/">Change Login Screen Background</a></p>
-<h4 id="_8">输入法</h4>
+<h4 id="_9">输入法</h4>
 <div class="highlight"><pre><span></span>gsettings get org.gnome.desktop.input-sources sources
 <span class="c1"># [('ibus', 'libpinyin')]</span>
 </pre></div>
-<h4 id="_9">代理</h4>
+<h4 id="_10">代理</h4>
 <div class="highlight"><pre><span></span>gsettings list-recursively org.gnome.system.proxy
 
 gsettings get org.gnome.system.proxy use-same-proxy
@@ -383,7 +389,7 @@ gsettings <span class="nb">set</span> org.gnome.system.proxy.socks host <span cl
 gsettings get org.gnome.system.proxy.socks port
 gsettings <span class="nb">set</span> org.gnome.system.proxy.socks port PORT
 </pre></div>
-<h4 id="_10">其他</h4>
+<h4 id="_11">其他</h4>
 <div class="highlight"><pre><span></span>gsettings get org.gnome.desktop.default-applications.terminal <span class="nb">exec</span>
 gsettings get org.gnome.desktop.default-applications.terminal exec-arg
 
@@ -469,7 +475,7 @@ python get-pip.py --user
 <h3 id="box">Box客户端</h3>
 <p>在 Nautilus 中连接 <code>davs://dav.box.com/</code></p>
 <hr>
-<h3 id="_11">编写代理文件</h3>
+<h3 id="_12">编写代理文件</h3>
 <div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">PROXY</span> <span class="o">=</span> <span class="s2">"SOCKS5 127.0.0.1:1080; DIRECT"</span><span class="p">;</span>
 
 <span class="kd">var</span> <span class="nx">blocked</span> <span class="o">=</span> <span class="p">{</span>
@@ -492,7 +498,7 @@ python get-pip.py --user
 <span class="p">}</span>
 </pre></div>
 <hr>
-<h3 id="_12">应用图标</h3>
+<h3 id="_13">应用图标</h3>
 <blockquote>
 <p>图标路径 <code>~/.local/share/applications/</code></p>
 </blockquote>
@@ -519,6 +525,18 @@ python get-pip.py --user
 <span class="na">StartupNotify</span><span class="o">=</span><span class="s">true</span>
 <span class="na">Categories</span><span class="o">=</span><span class="s">GNOME;GTK;Utility;TextEditor;Development;</span>
 <span class="na">MimeType</span><span class="o">=</span><span class="s">text/plain;</span>
+</pre></div>
+<h4 id="typora-typoradesktop">Typora (typora.desktop)</h4>
+<div class="highlight"><pre><span></span><span class="k">[Desktop Entry]</span>
+<span class="na">Name</span><span class="o">=</span><span class="s">Typora</span>
+<span class="na">Comment</span><span class="o">=</span><span class="s">a minimal Markdown reading &amp; writing app.</span>
+<span class="na">GenericName</span><span class="o">=</span><span class="s">Markdown Editor</span>
+<span class="na">Exec</span><span class="o">=</span><span class="s">/opt/typora/Typora %U</span>
+<span class="na">Icon</span><span class="o">=</span><span class="s">typora</span>
+<span class="na">Type</span><span class="o">=</span><span class="s">Application</span>
+<span class="na">StartupNotify</span><span class="o">=</span><span class="s">true</span>
+<span class="na">Categories</span><span class="o">=</span><span class="s">Office;WordProcessor;</span>
+<span class="na">MimeType</span><span class="o">=</span><span class="s">text/markdown;text/x-markdown;</span>
 </pre></div></hr></hr></hr></hr></hr></hr></hr></hr></hr></hr></hr></hr></hr></hr></hr></hr>
             
             
