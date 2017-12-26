@@ -109,7 +109,7 @@ polipo proxychains squid stunnel4 \
 pandoc \
 fping hping3 netcat nmap \
 samba smbclient samba-dsdb-modules samba-vfs-modules \
-vsftpd sqlite3 sqlite3-doc \
+vsftpd sqlite3 sqlcipher sqlite3-doc \
 qemu qemu-user-static \
 build-essential cppcheck glibc-doc gcc-doc libstdc++-6-doc make-doc \
 gcc-multilib g++-multilib gcc-arm-none-eabi gdb-arm-none-eabi \
