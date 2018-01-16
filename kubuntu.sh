@@ -9,7 +9,6 @@ qtconnectivity5-dev qtconnectivity5-examples \
 qtdeclarative5-examples \
 qtlocation5-dev qtlocation5-examples \
 qtmultimedia5-dev qtmultimedia5-examples \
-qtpositioning5-doc qtpositioning5-doc-html qtpositioning5-examples \
 qtquickcontrols2-5-dev qtquickcontrols2-5-examples \
 qtquickcontrols5-examples \
 qtscript5-dev qtscript5-examples \
