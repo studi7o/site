@@ -35,4 +35,5 @@ telegram-desktop \
 gstreamer1.0-plugins-bad gstreamer1.0-plugins-bad-doc \
 gstreamer1.0-plugins-ugly gstreamer1.0-plugins-ugly-doc \
 gstreamer1.0-fluendo-mp3 gstreamer1.0-libav \
-fcitx-rime kde-config-fcitx librime-data-bopomofo librime-data-combo-pinyin librime-data-double-pinyin librime-data-ipa-xsampa librime-data-jyutping librime-data-pinyin-simp librime-data-quick5 librime-data-scj6 librime-data-stenotype librime-data-stroke librime-data-terra-pinyin librime-data-sampheng librime-data-wubi librime-data-wugniu librime-data-zyenpheng
+fcitx-rime kde-config-fcitx librime-data-bopomofo librime-data-combo-pinyin librime-data-double-pinyin librime-data-ipa-xsampa librime-data-jyutping librime-data-pinyin-simp librime-data-quick5 librime-data-scj6 librime-data-stenotype librime-data-stroke librime-data-terra-pinyin librime-data-sampheng librime-data-wubi librime-data-wugniu librime-data-zyenpheng \
+make-doc gcc-7-doc autoconf-doc binutils-doc gcc-doc gettext-doc glibc-doc libtool-doc libstdc++-7-doc libxcb-doc libxext-doc llvm-4.0-doc m4-doc diffutils-doc
