@@ -514,3 +514,19 @@ Categories=Office;WordProcessor;
 MimeType=text/markdown;text/x-markdown;
 ```
 
+#### Don't Starve (dontstarve.desktop)
+
+``` txt
+[Desktop Entry]
+Encoding=UTF-8
+Value=1.0
+Type=Application
+Name=Don't Starve
+GenericName=Don't Starve
+Comment=Don't Starve
+Icon=/opt/dontstarve/dontstarve.xpm
+Exec=env LD_LIBRARY_PATH=/opt/dontstarve/bin/lib64 /opt/dontstarve/bin/dontstarve
+Categories=Game;
+Path=/opt/dontstarve/bin
+```
+

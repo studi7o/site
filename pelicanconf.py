@@ -21,11 +21,10 @@ MARKDOWN = {
 	'output_format': 'html5'
 }
 
-STATIC_PATHS = ['favicon.ico', 'proxy.pac', 'gnome.sh']
+STATIC_PATHS = ['favicon.ico', 'proxy.pac']
 EXTRA_PATH_METADATA = {
 	'favicon.ico': {'path': 'favicon.ico'},
-	'proxy.pac': {'path': 'proxy.pac'},
-	'gnome.sh': {'path': 'gnome.sh'}
+	'proxy.pac': {'path': 'proxy.pac'}
 }
 
 # Feed generation is usually not desired when developing
