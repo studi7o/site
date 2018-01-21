@@ -10057,4 +10057,17 @@ python get-pip.py --user
 &lt;span class="na"&gt;StartupNotify&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
 &lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Office;WordProcessor;&lt;/span&gt;
 &lt;span class="na"&gt;MimeType&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;text/markdown;text/x-markdown;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="dont-starve-dontstarvedesktop"&gt;Don't Starve (dontstarve.desktop)&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[Desktop Entry]&lt;/span&gt;
+&lt;span class="na"&gt;Encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;UTF-8&lt;/span&gt;
+&lt;span class="na"&gt;Value&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;1.0&lt;/span&gt;
+&lt;span class="na"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Application&lt;/span&gt;
+&lt;span class="na"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Don't Starve&lt;/span&gt;
+&lt;span class="na"&gt;GenericName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Don't Starve&lt;/span&gt;
+&lt;span class="na"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Don't Starve&lt;/span&gt;
+&lt;span class="na"&gt;Icon&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/opt/dontstarve/dontstarve.xpm&lt;/span&gt;
+&lt;span class="na"&gt;Exec&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;env LD_LIBRARY_PATH=/opt/dontstarve/bin/lib64 /opt/dontstarve/bin/dontstarve&lt;/span&gt;
+&lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Game;&lt;/span&gt;
+&lt;span class="na"&gt;Path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/opt/dontstarve/bin&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;&lt;/hr&gt;</content></entry></feed>
