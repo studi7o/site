@@ -67,11 +67,9 @@ Date: 2000-01-01 00:00
 |[Uber](https://www.uber.com/)|Russian Mail|Meng Hao-jan|
 |[Ubisoft](https://www.ubisoft.com/)|Russian Mail|Meng Hao-jan|
 |[Udemy](https://www.udemy.com/)|Russian Mail|Meng Hao-jan|
-|[Vimeo](https://vimeo.com/)|Russian Mail|Meng Hao-jan|
 |[Vine](https://vine.co/)|<del>Russian Mail</del> (USELESS)|Meng Hao-jan|
 |[Visa Checkout](https://checkout.visa.com/)|Russian Mail|Sno|
 |[VK](https://vk.com/)|Russian Mail|Meng Hao-jan|
-|[Vultr](https://www.vultr.com/)|Russian Mail|Meng Hao-jan|
 |[WhatsApp](https://www.whatsapp.com/)|Mobile Number|-|
 |[WordPress.com](https://wordpress.com/) / [Gravatar](https://gravatar.com/)|Russian Mail|Meng Hao-jan|
 |[XMind Cloud](https://cloud.xmind.net/)|Russian Mail|Meng Hao-jan|
