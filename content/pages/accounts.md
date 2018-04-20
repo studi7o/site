@@ -20,7 +20,6 @@ Date: 2000-01-01 00:00
 |[Dropbox](https://www.dropbox.com/)|Russian Mail|Meng Hao-jan|
 |[Duolingo](https://www.duolingo.com/)|Russian Mail|Meng Hao-jan|
 |[Dynadot](https://www.dynadot.com/)|studio|Meng Hao-jan|
-|[Evernote](https://evernote.com/)|Russian Mail|Meng Hao-jan|
 |[F-Secure](https://www.f-secure.com/)|Russian Mail|Meng Hao-jan|
 |[Fabric](https://www.fabric.io/)|Russian Mail|Meng Hao-jan|
 |[Facebook](https://www.facebook.com/)|Russian Mail|Meng Hao-jan|
@@ -55,7 +54,6 @@ Date: 2000-01-01 00:00
 |[Path](https://path.com/)|Russian Mail|Meng Hao-jan|
 |[PayPal](https://www.paypal.com/)|Russian Mail|Meng Hao-jan|
 |[Pinterest](https://www.pinterest.com/)|Russian Mail|Meng Hao-jan|
-|[Pocket](https://getpocket.com/)|Russian Mail|Meng Hao-jan|
 |[Qt](https://www.qt.io/)|Russian Mail|Meng Hao-jan|
 |[Quora](https://www.quora.com/)|Russian Mail|Meng Hao-jan|
 |[Red Hat](https://www.redhat.com/)|studio|Meng Hao-jan|
