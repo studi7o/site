@@ -11,7 +11,6 @@ Date: 2000-01-01 00:00
 |[Asmodee](https://account.asmodee.net/)|Russian Mail|Meng Hao-jan|
 |[Battle](https://battle.net/)|Russian Mail|Meng Hao-jan|
 |[Bitbucket](https://bitbucket.org/) / [Coveralls](https://coveralls.io/)|Russian Mail|Meng Hao-jan|
-|[Box](https://www.box.com/)|Russian Mail|Meng Hao-jan|
 |[CSSDeck](http://cssdeck.com/)|Russian Mail|Meng Hao-jan|
 |[Cloud9](https://c9.io/)|Russian Mail|Meng Hao-jan|
 |[Coinbase](https://www.coinbase.com/)|Russian Mail|Meng Hao-jan|
@@ -50,7 +49,6 @@ Date: 2000-01-01 00:00
 |[OnRPG](https://www.onrpg.com/)|studio|Meng Hao-jan|
 |[Origin](https://www.origin.com/)|Russian Mail|Meng Hao-jan|
 |[Packt Publishing](https://www.packtpub.com/)|Russian Mail|Meng Hao-jan|
-|[Pandora](http://www.pandora.com/)|Russian Mail|Meng Hao-jan|
 |[Path](https://path.com/)|Russian Mail|Meng Hao-jan|
 |[PayPal](https://www.paypal.com/)|Russian Mail|Meng Hao-jan|
 |[Pinterest](https://www.pinterest.com/)|Russian Mail|Meng Hao-jan|
@@ -63,7 +61,6 @@ Date: 2000-01-01 00:00
 |[Steam](http://store.steampowered.com/)|studio|Meng Hao-jan|
 |[Tumblr](https://www.tumblr.com/)|Russian Mail|Meng Hao-jan|
 |[Twitch](https://www.twitch.tv/)|studio|Meng Hao-jan|
-|[Twitter](https://twitter.com/)|Russian Mail|Meng Hao-jan|
 |[Uber](https://www.uber.com/)|Russian Mail|Meng Hao-jan|
 |[Ubisoft](https://www.ubisoft.com/)|Russian Mail|Meng Hao-jan|
 |[Udemy](https://www.udemy.com/)|Russian Mail|Meng Hao-jan|
